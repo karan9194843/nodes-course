@@ -14,7 +14,7 @@
 
 // })
 
-fetch('http://localhost:3000/weather?address=boston').then((response)=>{
+fetch('/weather?address=boston').then((response)=>{
 
 response.json().then((data)=>{
 
@@ -46,7 +46,7 @@ weatherForm.addEventListener('submit',(e)=>{
     const location=search.value
 console.log(search.value)
 
-fetch('http://localhost:3000/weather?address='+search.value).then((response)=>{
+fetch('/weather?address='+search.value).then((response)=>{
 
 response.json().then((data)=>{
 

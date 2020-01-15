@@ -10,7 +10,7 @@ console.log(__dirname)
 //console.log(__filename)
 console.log(path.join(__dirname,'../public'))
 const app=express()
-
+const port =process.env.PORT || 3000
 const publicdirectoryPath=path.join(__dirname,'../public')
 const viewsPath=path.join(__dirname,"../templates/views")
 const partialsPath=path.join(__dirname,"../templates/partials")
@@ -154,7 +154,7 @@ app.get('*',(req,res)=>{
 
 
 //this is mainly for starting/initiating the server
-app.listen(3000,()=>{
-    console.log('server is running')
+app.listen(port,()=>{
+    console.log('server is runningat '+ port)
 })
 
