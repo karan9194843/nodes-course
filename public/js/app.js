@@ -2,7 +2,7 @@
 
 //import { response } from "express"
 
-console.log('client side javascript file')
+//console.log('client side javascript file')
 // fetch('http://localhost:3000/weather?address=boston').then((response)=>{
 //     response.json().then((data)=>{
 
